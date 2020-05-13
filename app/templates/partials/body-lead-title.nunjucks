@@ -1,0 +1,13 @@
+{% block bodyLeadTitle %}
+    {% if bodyTitle or bodyLead %}
+        <div class="mt-3">
+            {% if bodyTitle%}
+                <h2>{{ bodyTitle}}</h2>
+            {% endif %}
+            {% if bodyLead%}
+                <p class="bd-lead">{{ bodyLead}}</p>
+            {% endif %}
+            <hr/>
+        </div>
+    {% endif %}
+{% endblock %}

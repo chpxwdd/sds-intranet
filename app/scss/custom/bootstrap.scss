@@ -1,0 +1,12 @@
+
+$theme-colors: (
+	'primary': #740201,
+	'primary-d': #740201,
+	'primary-l': #996666,
+	'secondary-d': #D8B798,
+	'secondary-l': #FFF7E8,
+);
+
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 30 30'><rect x='4' y='22.5' fill='#FFF7E8' width='22' height='1.5'/><rect x='4' y='15' fill='#FFF7E8' width='22' height='1.5'/><rect x='4' y='7.5' fill='#FFF7E8' width='22' height='1.5'/></svg>") !default;
+
+@import './node_modules/bootstrap/scss/bootstrap';

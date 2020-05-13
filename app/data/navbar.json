@@ -1,0 +1,205 @@
+{
+	"navbarListItems": [
+		{
+			"label": "страны",
+			"arguments": {
+				"s": "countries"
+			}
+		},
+		{
+			"label": "навигатор",
+			"child": [
+				{
+					"label": "виды отдыха",
+					"arguments": {
+						"s": "listtypetravel"
+					}
+				},
+				{
+					"label": "круизы",
+					"arguments": {
+						"s": "cruises"
+					}
+				},
+				{
+					"label": "программы путешествий",
+					"arguments": {
+						"s": "programs"
+					}
+				},
+				{
+					"label": "новые отели мира",
+					"arguments": {
+						"s": "hotelnew"
+					}
+				},
+				{
+					"label": "гостиничные сети",
+					"arguments": {
+						"s": "collections"
+					}
+				},
+				{
+					"label": "видео о странах",
+					"arguments": {
+						"s": "videolist"
+					}
+				},
+				{
+					"label": "сезоны по странам",
+					"arguments": {
+						"s": "season"
+					}
+				}
+			]
+		},
+		{
+			"label": "подбор тура",
+			"child": [
+				{
+					"label": "тур",
+					"arguments": {
+						"s": "toursearch"
+					}
+				},
+				{
+					"label": "отель",
+					"arguments": {
+						"s": "hotelsearch"
+					}
+				},
+				{
+					"label": "авиабилеты",
+					"arguments": {
+						"s": "airsearch"
+					}
+				},
+				{
+					"label": "трансфер",
+					"arguments": {
+						"s": "transfersearch"
+					}
+				},
+				{
+					"label": "экскурсия",
+					"arguments": {
+						"s": "servicesearch"
+					}
+				},
+				{
+					"label": "сервис",
+					"arguments": {
+						"s": "servicesearch",
+						"type": 2
+					}
+				},
+				{
+					"label": "круиз",
+					"arguments": {
+						"s": "cruises"
+					}
+				},
+				{
+					"label": "on-line брон. отелей",
+					"arguments": {
+						"s": "hotellist2"
+					}
+				},
+				{
+					"label": "on-line брон. авиабилетов",
+					"arguments": {
+						"s": "airsearch"
+					}
+				},
+				{
+					"label": "on-line брон. трансферов",
+					"arguments": {
+						"s": "transferlist2"
+					}
+				},
+				{
+					"label": "on-line брон. экскурсий",
+					"arguments": {
+						"s": "servicelist2"
+					}
+				}
+			]
+		},
+		{
+			"label": "авиабилеты",
+			"child": [
+				{
+					"label": "on-line бронирование",
+					"arguments": {
+						"s": "airsearch"
+					}
+				},
+				{
+					"label": "спецпредложения",
+					"arguments": {
+						"s": "aircompanyspeciallist"
+					}
+				},
+				{
+					"label": "аренда самолетов",
+					"arguments": {
+						"s": "aircrafts"
+					}
+				},
+				{
+					"label": "авиатакси по России",
+					"arguments": {
+						"s": "flights"
+					}
+				},
+				{
+					"label": "авиакомпании",
+					"arguments": {
+						"s": "avia"
+					}
+				},
+				{
+					"label": "VIP-залы аэропортов",
+					"arguments": {
+						"s": "airportvip"
+					}
+				}
+			]
+		},
+		{
+			"label": "спецпредложения",
+			"child": [
+				{
+					"label": "гарантированные номера",
+					"arguments": {
+						"s": "option"
+					}
+				},
+				{
+					"label": "наличие мест онлайн",
+					"arguments": {
+						"s": "optionlist"
+					}
+				},
+				{
+					"label": "скидки, бесплатные ночи",
+					"arguments": {
+						"s": "bonus"
+					}
+				},
+				{
+					"label": "авиабилеты",
+					"arguments": {
+						"s": "aircompanyspeciallist"
+					}
+				}
+			]
+		},
+		{
+			"label": "гарантированные номера",
+			"arguments": {
+				"s": "option"
+			}
+		}
+	]
+}

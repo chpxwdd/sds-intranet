@@ -1,0 +1,533 @@
+{
+	"ordersListGroup": {
+		"title": "Приказы и распоряжения",
+		"groups": [
+			{
+				"title": "Инструкции",
+				"items": [
+					{
+						"title": "Подписание электронных договоров",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 339036970 },
+								"label": "Электронный договор"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "11.12.2019 11:13"
+					},
+
+					{
+						"title": "ВИП залы",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 320967930 },
+								"label": "ВИП залы в аэропортах"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "14.06.2019 11:54"
+					},
+					{
+						"title": "Создание письма с калькуляцией",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 285300561 },
+								"label": "Создание письма с калькуляцией.doc"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 297640104 },
+								"label": "Письмо калькуляция (версия 2)"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "06.06.2018 10:05"
+					},
+					{
+						"title": "Внесение телефона клиента при выписке авиабилетов",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 264767953 },
+								"label": "Внесение телефона клиента"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "18.12.2017 13:19"
+					},
+					{
+						"title": "Страховые полисы Пари",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 256816731 },
+								"label": "Выписка страховок"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "06.10.2017 10:30"
+					},
+					{
+						"title": "Получение скидки на сайте",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 229321183 },
+								"label": "Получение скидки"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "24.03.2017 11:48"
+					},
+					{
+						"title": "Регистрация рекламных звонков",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 222183915 },
+								"label": "Регистрация звонков"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "13.02.2017 12:08"
+					},
+					{
+						"title": "Онлайн регистрация на рейс",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 207989792 },
+								"label": "Онлайн регистрация"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 228040722 },
+								"label": "Онлайн регистрация - дополнения"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "15.12.2016 12:08"
+					},
+					{
+						"title": "Программа тура",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 163639277 },
+								"label": "program.doc"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "15.04.2016 11:34"
+					},
+					{
+						"title": "Типовые отказы при WEB-оплате",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 121241921 },
+								"label": "Типовые отказы при WEB-оплате"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "05.08.2015 15:12"
+					},
+					{
+						"title": "Веб заказы",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 107971511 },
+								"label": "Распределение веб заказов"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "15.05.2015 10:46"
+					},
+					{
+						"title": "Оплата банковской картой в Авиакомпанию",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 106729648 },
+								"label": "Оплата в авиакомпанию"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "22.04.2015 14:09"
+					},
+					{
+						"title": "Рекламный звонок",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 101994408 },
+								"label": "Заполенение анкеты рекламного звонка"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "09.04.2015 16:33"
+					},
+					{
+						"title": "Работа с личным кабинетом",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 101665457 },
+								"label": "Описание работы с личным кабинетом"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "03.04.2015 11:42"
+					},
+					{
+						"title": "Выписка счета для клиента",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 15899355 },
+								"label": "Инструкция как выписать счет"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "24.10.2012 11:41"
+					},
+					{
+						"title": "Печать договора с юр. лицом",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 15895921 },
+								"label": "Инструкция как заполнять договор"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "04.10.2012 11:23"
+					},
+					{
+						"title": "Приглашение на оплату через сайт",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 31490771 },
+								"label": "Инструкция на веб оплату"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "19.11.2013 13:52"
+					},
+					{
+						"title": "Сравнение цен онлайн",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 59464950 },
+								"label": "Сравнения цен онлайн на отель"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "10.06.2014 18:11"
+					},
+					{
+						"title": "Подбор другого номера в отеле",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 59465331 },
+								"label": "Подбор другого номера"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "10.06.2014 18:13"
+					}
+				]
+			},
+
+			{
+				"title": "Отдел маркетинга",
+				"items": [
+					{
+						"title": "Booking.com",
+						"content": "Ссылка для бронирований на booking.com (с нашей комиссией) http://www.booking.com/?aid=350402",
+						"fullname": "Андрей Луценко",
+						"created": "02.07.2013 13:38"
+					}
+				]
+			},
+			{
+				"title": "Служба сервиса",
+				"items": [
+					{
+						"title": "Бланк-заказ на оформление подарочного ваучера",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 84287895 },
+								"label": "Blank.doc"
+							}
+						],
+						"fullname": "Ольга Сидорова",
+						"created": "04.06.2013 14:10"
+					},
+					{
+						"title": "Поздравительные тексты и образцы подарочных ваучеров Образцы текстов для подарочных ваучеров и фото (во вложенных файлах)",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 7113 },
+								"label": "Поздравительные тексты для манускрипта"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 89491361 },
+								"label": "Ваучер в рамке (фото)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 86237885 },
+								"label": "Вкладыш на путешествие (фото)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 7109 },
+								"label": "Ларец с манускриптом (фото)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 86237893 },
+								"label": "Вкладыш на сумму (фото)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 84288112 },
+								"label": "Белая подарочная кожаная коробка (фото)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 7111 },
+								"label": "Оформленный манускрипт (фото)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 89493029 },
+								"label": "Коричневая подарочная кожаная коробка.jpg"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 34966481 },
+								"label": "Свадебное путешествие бланк (фото)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 89504123 },
+								"label": "Подарочная папка.jpg"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 89625566 },
+								"label": "Подарочная книга"
+							}
+						],
+						"fullname": "Ольга Сидорова",
+						"created": "29.03.2006 18:43"
+					},
+					{
+						"title": "Как продавать подарочные ваучеры",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 122041661 },
+								"label": "Правила оформления заказа ваучеров в службе сервиса"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 121558200 },
+								"label": "Порядок продажи и использования подарочных сертификатов"
+							}
+						],
+						"fullname": "Ольга Сидорова",
+						"created": "17.02.2011 12:51"
+					},
+					{
+						"title": "Приложение к договору для физ. лиц (подарочный ваучер)",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 16849050 },
+								"label": "Prilozhenie.doc"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "29.01.2013 10:25"
+					},
+					{
+						"title": "Инструкция для дежурных менеджеров в офисе на Татарском по оформлению подарочных ваучеров в выходные и праздничные дни",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 122041554 },
+								"label": "instructon.doc"
+							}
+						],
+						"fullname": "Валерий Черепанов",
+						"created": "22.12.2014 11:50"
+					},
+					{
+						"title": "Договоры на подарочные ваучеры для юр. лиц",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 235828871 },
+								"label": "Договор на ваучер 'Содис-Элит' (для юр. лиц)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 215971312 },
+								"label": "Договор на ваучер 'Ламанга' (для юр. лиц)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 191537778 },
+								"label": "Договор на ваучер 'Содис-Тур' (для юр. лиц)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 235828987 },
+								"label": "Договор на ваучер 'САМ' (для юр. лиц)"
+							}
+						],
+						"fullname": "Ольга Сидорова",
+						"created": "01.04.2015 13:41"
+					}
+				]
+			},
+			{
+				"title": "Рекламный отдел",
+				"items": [
+					{
+						"title": "Бэджи для сотрудников",
+						"content": "Заполнить форму <a href='https://docs.google.com/forms/d/1Qy75LKvPfjYFjQO0mGtkst-eaV62aJFG4INJMzGZI8A/edit'>по ссылке</a>",
+						"fullname": "Ольга Сидорова",
+						"created": "08.11.2019 10:39"
+					}
+				]
+			},
+			{
+				"title": "Авиа отдел",
+				"items": [
+					{
+						"title": "Привилегии для пассажиров авиакомпаний",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 152047779 },
+								"label": "Аэрофлот"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 152047786 },
+								"label": "Singapore Airlines"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 152047782 },
+								"label": "Emirates"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 152047784 },
+								"label": "Etihad Airways"
+							}
+						],
+						"fullname": "Ольга Сидорова",
+						"created": "05.02.2016 13:49"
+					}
+				]
+			},
+			{
+				"title": "Бухгалтерия",
+				"items": [
+					{
+						"title": "Документы для 'СОДИС-АВИА' (договор для физ. лиц)",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 202881308 },
+								"label": " Договор поручения на приобретение ж/д билетов 'СОДИС-АВИА'"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "24.02.2004 18:12"
+					},
+					{
+						"title": "Документы для 'СОДИС-АЭРО' (ВИП обслуживание)",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 202885121 },
+								"label": "Договор возмездного оказания услуг 'СОДИС-АЭРО'"
+							}
+						],
+						"fullname": "Ольга Жукова",
+						"created": "23.09.2010 15:33"
+					},
+					{
+						"title": "Документы для 'СОДИС-АЭРО' (договор на чартер)",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 202887033 },
+								"label": "Договор на чартер 'СОДИС-АЭРО'"
+							}
+						],
+						"fullname": "Ольга Жукова",
+						"created": "23.09.2010 18:49"
+					},
+					{
+						"title": "Договоры возмездного оказания услуг",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 16885085 },
+								"label": "'СОДИС-ЭЛИТ'"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 4986241 },
+								"label": "'САМ'"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 191541258 },
+								"label": "'СОДИС-ТУР' (Москва)"
+							},
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 252814340 },
+								"label": "'Ламанга'"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "30.04.2004 16:04"
+					},
+					{
+						"title": "Приложение к договору (подарочный ваучер)",
+						"files": [
+							{
+								"path": "fileservlet",
+								"arguments": { "id": 7667 },
+								"label": "Prilozhenie.doc"
+							}
+						],
+						"fullname": "Андрей Луценко",
+						"created": "25.04.2005 17:44"
+					}
+				]
+			}
+		]
+	}
+}

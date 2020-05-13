@@ -1,0 +1,55 @@
+{# variabes #}
+{% set title = 'Главная. ' + ordersListGroup.title %}
+{% set bodyTitle = ordersListGroup.title %}
+{% set bodyLead = '' %}
+{% extends 'layout.nunjucks' %}
+{% block content %}
+   {% if ordersListGroup %}
+      {% for group in ordersListGroup.groups %}
+         {% if group.items %}
+            <h4 class="mt-4">{{ group.title }}</h4>
+            {% for item in group.items %}
+               <div class="card mb-3">
+                  <div class="card-body">
+                     <h5 class="card-title">{{ item.title }}</h5>
+                     <hr class="mb-2 mt-1"/>
+                     {% if item.content %}
+                        <p class="card-text"><i class="fa fa-doc"></i>{{ item.content }}</p>
+                     {% endif %}
+                     {% if item.files %}
+                        <div class="row">
+                           {% for file in item.files%}
+                              {% set href = "#" %}
+                              {% if file.path %}
+                                 {% set href = file.path + "?" %}
+                              {% endif %}
+                              {% if file.arguments %}
+                                 {% if href !== "#" or(file.path and href !== file.path) %}
+                                    {% set href = href + "&" %}
+                                 {% endif %}
+                                 {% for key, val in file.arguments %}
+                                    {% set href = href + key + "=" + val %}
+                                 {% endfor %}
+                              {% endif %}
+                              <div class="col {% if loop.index > 1 %}col-xs-12 col-sm-12 col-lg-6 col-xl-6{% endif %}">
+                                 <p class="card-text mb-1">
+                                    <a href="{{href}}" target="_blank">
+                                       <i class="fa fa-file-o"></i>{{file.label}} 
+                                    </a>
+                                 </p>
+                              </div>
+                           {% endfor %}
+                        </div>
+                     {% endif %}
+                     <hr class="mt-1 mb-2"/>
+                     <p class="card-text text-right">
+                        <small class="text-muted">{{ item.fullname | safe }},
+                           {{item.created}}</small>
+                     </p>
+                  </div>
+               </div>
+            {% endfor %}
+         {% endif %}
+      {% endfor %}
+   {% endif %}
+{% endblock %}

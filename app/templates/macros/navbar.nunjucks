@@ -1,0 +1,39 @@
+{#  #}
+{% macro buildHref(arguments) %}
+    {% set href = "disp?" %}
+    {% for key, value in arguments %}
+        {% if href !== "disp?" %}
+            {% set href = href + "&" %}
+        {% endif %}
+        {% set href = href + key + "=" + value %}
+    {% endfor %}
+    {{ href | escape }}
+{% endmacro %}
+
+{% macro twbsNavLink(idx, label, arguments) %}
+    <a href="{{ buildHref(arguments) | escape }}" id="navbar-link-{{idx}}" class="nav-link">{{ label }}</a>
+{% endmacro %}
+
+{#  #}
+{% macro twbsNavDropdown(idx, label, child) %}
+    {% set idDropdown = "navbar-dropdown-link-" + idx %}
+    <a href="#" id="{{ idDropdown }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ label }}</a>
+    <div class="dropdown-menu" aria-labelledby="{{ idDropdown }}">
+        {% for item in child %}
+            <a class="dropdown-item" href="{{ buildHref(item.arguments) | escape}}">{{item.label}}</a>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
+{#  #}
+{% macro twbsNavItem(idx, item) %}
+    {% if item.child %}
+        <li class="nav-item dropdown">
+            {{ twbsNavDropdown(idx, item.label, item.child) }}
+        </li>
+    {% else %}
+        <li class="nav-item">
+            <a href="{{ href }}" id="navbar-link-{{idx}}" class="nav-link">{{ item.label }}</a>
+        </li>
+    {% endif %}
+{% endmacro %}

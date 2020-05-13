@@ -1,0 +1,76 @@
+{% set title = 'Выбор тура' %}
+{% set bodyTitle = title %}
+{% set bodyLead = '' %}
+{% extends 'layout.nunjucks' %}
+
+{% set bs_size = 'sm' %}
+{% set module = 'toursearch' %}
+
+{% block content %}
+    <form class="sds-js-{{module}}-form" id="toursearch-{{module}}_form">
+        {# <h3>Укажите название города или курорта</h3> #}
+        <div class="card mb-2 bg-light">
+            <div class="card-body">
+                <h5 class="card-title">Направление</h5>
+                <hr class="mb-2 mt-0"/>
+                {# Направление поездки #}
+                <div class="form-group form-group-sm row mb-2">
+                    <label for="toursearch-dest" class="col-sm-4 col-form-label col-form-label-sm">Направление поездки</label>
+                    <div class="col-sm-8">
+                        <input type="input" id="toursearch-dest" name="toursearch-dest" class="form-control form-control-sm">
+                    </div>
+                </div>
+                {# Аэропорт вылета #}
+                <div class="form-group form-group-sm row mb-2">
+                    <label for="toursearch-airport" class="col-sm-4 col-form-label col-form-label-sm">Аэропорт вылета</label>
+                    <div class="col-sm-8">
+                        <input type="input" id="toursearch-airport" name="toursearch-airport" class="form-control form-control-sm"/>
+                    </div>
+                </div>
+                {# Класс обслуживания авиаперета #}
+                <div class="form-group form-group-sm row mb-2">
+                    <label for="toursearch-classtype" class="col-sm-4 col-form-label col-form-label-sm">Класс авиаперелета</label>
+                    <div class="col-sm-8">
+                        <select class="form-control form-control-sm" id="toursearch-classtype" name="toursearch-classtype">
+                            {% for item in classtypeOptions %}}
+                                <option value="{{item.value}}">{{item.option}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <h5 class="card-title mt-4">Размещение</h5>
+                <hr class="mb-2 mt-0"/>
+                {# Даты поездки #}
+                <div class="form-group form-group-sm row mb-2">
+                    <label for="toursearch-dates" class="col-sm-4 col-xs-6 col-form-label col-form-label-sm">Даты поездки</label>
+                    <div class="col-sm-8 col-xs-6">
+                        <input type="input" id="toursearch-dates" name="toursearch-dates" class="form-control form-control-sm"/>
+                    </div>
+                </div>
+
+                {# Rooms #}
+                <div class="form-group form-group-sm row mb-2">
+                    <label for="toursearch-rooms" class="col-sm-4 col-xs-6 col-form-label col-form-label-sm">Количество номеров</label>
+                    <div class="col-sm-3 col-xs-6">
+                        <input type="text" id="toursearch-rooms" name="toursearch-rooms" value="1" class="sds-ui-counter text-center form-control" aria-label="Количество номеров" aria-describedby="toursearch-rooms-addon" data-min="1" data-max="5" data-step="1" data-bs-size="sm"/>
+                    </div>
+                </div>
+
+                {# Adults #}
+                <h6 class="card-title mt-4">Гости</h6>
+                <hr class="mb-1 mt-0"/>
+                <div class="form-group form-group-sm row mb-2">
+                    <label for="toursearch-adult" class="col-sm-4 col-xs-6 col-form-label col-form-label-sm">Взрослые</label>
+                    <div class="col-sm-3 col-xs-6">
+                        <input type="text" id="toursearch-adult" name="toursearch-adult" value="1" class="sds-ui-counter text-center form-control" aria-label="Количество взрослых" aria-describedby="toursearch-rooms-addon" data-min="1" data-max="9" data-step="1" data-bs-size="sm"/>
+                    </div>
+                </div>
+
+                {# Submit #}
+                <hr class="mb-2 mt-0"/>
+                <button type="submit" class="btn btn-sm btn-primary-l pull-right">Поиск тура</button>
+
+            </div>
+        </div>
+    </form>
+{% endblock %}

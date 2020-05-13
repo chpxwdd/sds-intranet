@@ -1,0 +1,43 @@
+// @media window width
+$xs-max: 575px;
+$sm-max: 767px;
+$md-max: 991px;
+$lg-max: 1199px;
+$sm-min: $xs-max + 1px;
+$md-min: $sm-max + 1px;
+$lg-min: $md-max + 1px;
+$xl-min: $lg-max + 1px;
+
+// Z-index
+$zi-content: 10;
+$zi-nav: 100;
+// Background color
+// Dark
+$bg-color-dark-primary-rgb: rgb(116, 2, 1);
+$bg-color-dark-primary-rgba: rgba(116, 2, 1, 1);
+$bg-color-dark-primary: #740201;
+$bg-color-dark-secondary-rgb: rgb(148, 2, 1);
+$bg-color-dark-secondary-rgba: rgba(148, 2, 1, 1);
+$bg-color-dark-secondary: #940201;
+// Light
+$bg-color-light-primary-rgb: rgb(255, 247, 232);
+$bg-color-light-primary-rgba: rgba(255, 247, 232, 1);
+$bg-color-light-primary: #fff7e8;
+$bg-color-light-secondary-rgb: rgb(252, 227, 187);
+$bg-color-light-secondary-rgba: rgba(252, 227, 187, 1);
+$bg-color-light-secondary: #f1d9d2;
+
+// Typography
+// color
+$color:#393939;
+// links
+$color-link: #740201;
+$color-link_hover: #770000;
+$color-link-alt: #F4E7E7;
+$color-link-alt_hover: #EEE;
+
+// Fonts
+$font-family: 'Roboto', sans-serif;
+$font-weight: 300;
+$font-style: normal;
+$font-size: 0.9em;

@@ -1,0 +1,66 @@
+{% macro formLabel(name, label, size = "", column = 0) %}
+    {% set class = "" %}
+    {% if col != 0 %}
+        {% set column = 12 - column %}
+        {% set class = " class='col-sm-" +  column + " col-form-label-" + size +" col-form-label'" %}
+    {% endif %}
+    <label for="{{name}}" {{class}}>{{label}}</label>
+{% endmacro %}
+{#  #}
+{% macro formElementInputText(name, label, size = "", col = 8, placeholder = "") %}
+    {% set attributePlaceholder = "" %}
+    {% if placeholder %}
+        {% set attributePlaceholder = "placeholder='" + label + "'" %}
+    {% endif %}
+
+    <div class="form-group{%if size%} form-group-{{size}}{%endif%} row mb-1">
+        <label for="{{name}}" class="col-sm-{{12-col}} col-form-label">{{label}}</label>
+        <div class="col-sm-{{col}}">
+            <input type="input" class="form-control{%if size%} form-control-{{size}}{%endif%}" id="{{name}}" {{attributePlaceholder}}>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro formElementSelect(name, label, options = [], size = "", col = 0) %}
+    <div class="form-group{%if size %} form-group-{{size}}{%endif%} row mb-1">
+        <div class="col-sm-{{col}}">
+            <select class="form-control{%if size%} form-control-{{size}}{%endif%}" id="{{name}}" name="{{name}}">
+                {% for item in options %}}
+                    <option value="{{item.value}}">{{item.option}}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro formElementInputCounter(name, label, value = 0, size = "", col = 8, options = {}) %}
+    {% set max = 0 %}
+    {% if options.max %}
+        {% set max = options.max %}
+    {% endif %}
+
+    {% set min = 0 %}
+    {% if options.min %}
+        {% set min = options.min %}
+    {% endif %}
+
+    {% set step = 1 %}
+    {% if options.step %}
+        {% set step = options.step %}
+    {% endif %}
+
+    <div class="input-group{%if size%} input-group-{{size}}{%endif%} mb-3">
+        <div class="input-group-prepend">
+            <button class="btn btn-primary-l{%if size%} btn-{{size}}{%endif%}" type="button">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+        <input type="text" id="{{name}}" name="{{name}}" value="{{value}}" class="sds-ui-counter form-control{%if size%} form-control-{{size}}{%endif%}" aria-label="{{label}}" aria-describedby="{{name}}-addon" data-max="{{max}}" data-min="{{min}}" data-step="{{min}}"/>
+        <div class="input-group-append">
+            <button class="btn btn-primary-l{%if size%} btn-{{size}}{%endif%}" type="button">
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+    </div>
+
+{% endmacro %}

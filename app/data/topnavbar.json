@@ -1,0 +1,101 @@
+{
+	"topnavbarListItems": [
+		{
+			"label": "Главная",
+			"path": "/"
+		},
+		{
+			"label": "o компании",
+			"child": [
+				{
+					"label": "о компании",
+					"arguments": {
+						"s": "aboutcompany"
+					}
+				},
+				{
+					"label": "проекты компании",
+					"arguments": {
+						"s": "projects"
+					}
+				},
+				{
+					"label": "нам 20 лет",
+					"arguments": {
+						"s": "20years"
+					}
+				},
+				{
+					"label": "клубная карта",
+					"path": "/discount"
+				},
+				{
+					"label": "партнёрские программы",
+					"arguments": {
+						"s": "affiliate"
+					}
+				},
+				{
+					"label": "публикации в СМИ",
+					"arguments": {
+						"s": "publicationlist"
+					}
+				},
+				{
+					"label": "вакансии",
+					"arguments": {
+						"s": "vacancy"
+					}
+				}
+			]
+		},
+		{
+			"label": "контакты",
+			"child": [
+				{
+					"label": "наши офисы",
+					"arguments": {
+						"s": "contactsmoscow"
+					}
+				}
+			]
+		},
+		{
+			"label": "визы",
+			"arguments": {
+				"s": "visas"
+			}
+		},
+		{
+			"label": "погода",
+			"child": [
+				{
+					"label": "прогноз",
+					"arguments": {
+						"s": "weather"
+					}
+				},
+				{
+					"label": "архив",
+					"arguments": {
+						"s": "weatherarchive"
+					}
+				}
+			]
+		},
+		{
+			"label": "мобильная версия",
+			"path": "http://m.sodis.ru",
+			"attributes": {
+				"rel": "nofollow"
+			}
+		},
+		{
+			"label": "корзина",
+			"child": [],
+			"arguments": {
+				"s": "tour"
+			}
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"classtypeOptions": [
+		{ "value": 1, "option": "эконом" },
+		{ "value": 2, "option": "биснес" },
+		{ "value": 3, "option": "первый" }
+	]
+}

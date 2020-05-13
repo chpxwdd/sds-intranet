@@ -1,0 +1,29 @@
+@import 'dev/variables.scss';
+
+body > .daterangepicker {
+	.drp-calendar {
+		.month {
+			select {
+				font-weight: 400;
+				line-height: 1.5;
+				color: #495057;
+				background-color: #fff;
+				background-clip: padding-box;
+				border: 1px solid #ced4da;
+				border-radius: 0.25rem;
+
+				.monthselect {
+					margin-right: 1px;
+					float: left;
+				}
+
+				.yearselect {
+					float: right;
+				}
+			}
+		}
+		.calendar-table > table > tbody > tr > td {
+			margin-bottom: 1px;
+		}
+	}
+}

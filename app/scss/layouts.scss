@@ -1,0 +1,18 @@
+@import './dev/variables.scss';
+
+#header {
+	position: relative;
+	z-index: $zi-content;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	height: 120px;
+	max-height: 120px;
+	min-height: 120px;
+	background-color: $bg-color-dark-primary-rgb;
+
+	.topnavbar {
+		position: relative;
+		z-index: $zi-content;
+	}
+}
