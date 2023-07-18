@@ -308,21 +308,34 @@
 
                         <div id="content">
                             
-    <form class="sds-js-participant-document-form" name="participant-document-form" id="participant-document-form">
-        <div class="card-body">
-            <h5 class="card-title">Направление</h5>
-            <hr class="mb-2 mt-0"/>
+	<form class="sds-js-participant-document-form"
+		name="participant-document-form"
+		id="participant-document-form">
+		<div class="card-body">
+			<h5 class="card-title">
+				Направление
+			</h5>
+			<hr class="mb-2 mt-0" />
 
-            <div class="form-group form-group-sm row mb-2">
-                <label for="fms-code" class="col-sm-4 col-form-label col-form-label-sm">Кем выдан</label>
-                <div class="input-group mb-3">
-                    <input name='fms-code' type="text" class="w-25 form-control" placeholder="Код подразделения" aria-label="fms-code">
-                    <input name='fms-name' type="text" class="w-75 form-control" placeholder="Кем выдан" aria-label="fms-name">
-                </div>
-            </div>
-        </div>
-        
-    </form>
+			<div class="form-group form-group-sm row mb-2">
+				<label for="fms-code" class="col-sm-4 col-form-label col-form-label-sm">
+					Подразделение, выдавшее паспорт
+				</label>
+				<div class="input-group col-sm-8">
+					<input type="text"
+						name="fms-code"
+						placeholder="код"
+						aria-label="код подразделения"
+						class="w-25 form-control" />
+					<input type="text"
+						name="fms-place"
+						placeholder="название"
+						aria-label="название подразделения"
+						class="w-75 form-control" />
+				</div>
+			</div>
+		</div>
+	</form>
 
                         </div>
                     </div>

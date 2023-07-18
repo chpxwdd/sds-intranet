@@ -1,0 +1,38 @@
+{# variabes #}
+{% set title = 'Ввод документа' %}
+{% set bodyTitle = 'Формы ввода документов туриста' %}
+{% set bodyLead = '' %}
+{% extends 'layout.njk' %}
+
+{% set bs_size = 'sm' %}
+{% set module = 'participant-document' %}
+{% block content %}
+	<form class="sds-js-{{ module }}-form"
+		name="{{ module }}-form"
+		id="{{ module }}-form">
+		<div class="card-body">
+			<h5 class="card-title">
+				Направление
+			</h5>
+			<hr class="mb-2 mt-0" />
+
+			<div class="form-group form-group-sm row mb-2">
+				<label for="fms-code" class="col-sm-4 col-form-label col-form-label-sm">
+					Подразделение, выдавшее паспорт
+				</label>
+				<div class="input-group col-sm-8">
+					<input type="text"
+						name="fms-code"
+						placeholder="код"
+						aria-label="код подразделения"
+						class="w-25 form-control" />
+					<input type="text"
+						name="fms-place"
+						placeholder="название"
+						aria-label="название подразделения"
+						class="w-75 form-control" />
+				</div>
+			</div>
+		</div>
+	</form>
+{% endblock %}

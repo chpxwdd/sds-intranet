@@ -5,7 +5,7 @@ const data = require('gulp-data');
 const concatCSS = require('gulp-concat-css');
 const concatJS = require('gulp-concat');
 const stripCssComments = require('gulp-strip-css-comments');
-const nunjucksRender = require('gulp-nunjucks-render');
+const njkRender = require('gulp-nunjucks-render');
 const uglify = require('gulp-uglify');
 const wrap = require('gulp-wrap-js');
 
@@ -98,12 +98,12 @@ gulp.task('js-bundle', function (done) {
 	done();
 });
 
-gulp.task('nj-templates', function (done) {
+gulp.task('njk-templates', function (done) {
 	gulp
 		.src([
-			'./app/**/**/**.+(html|nunjucks)',
-			'./app/**/**.+(html|nunjucks)',
-			'./app/**.+(html|nunjucks)'
+			'./app/**/**/**.+(html|njk)',
+			'./app/**/**.+(html|njk)',
+			'./app/**.+(html|njk)'
 		])
 		.pipe(
 			data(function () {
@@ -130,7 +130,7 @@ gulp.task('nj-templates', function (done) {
 				return require(PATH.DATA.concat('/toursearch-form.json'));
 			})
 		)
-		.pipe(nunjucksRender({ path: [PATH.TEMPLATES] }))
+		.pipe(njkRender({ path: [PATH.TEMPLATES] }))
 		.pipe(gulp.dest('src'));
 	done();
 });
@@ -139,31 +139,11 @@ gulp.task('nj-templates', function (done) {
 gulp.task('serve', function (done) {
 	browserSync.init({ server: PATH.SRC });
 	gulp.watch(PATH.APP_SCSS.concat('/*.scss'), gulp.series('sass-bundle'));
-	// gulp.watch('./app/js/*.js', gulp.series('js-bundle'));
-	// gulp.watch(PATH.APP_JS.concat('/*.js'), gulp.series('js-bundle'));
 	gulp.watch(PATH.APP_JS.concat('/*.js'), gulp.series('js-bundle'));
 	gulp.watch(PATH.APP_JS.concat('/**/*.js'), gulp.series('js-bundle'));
 	gulp.watch('./app/js/ui/*.js', gulp.series('js-bundle'));
 	gulp.watch('./app/js/modules/*.js', gulp.series('js-bundle'));
-	gulp.watch(PATH.APP.concat('/*.nunjucks'), gulp.series('nj-templates'));
-
-	// gulp.watch(PATH.PARTIALS.concat('/*.(html|nunjucks)')).on('change', () => {
-	// 	browserSync.reload();
-	// 	browserSync.resume;
-	// 	done();
-	// });
-	// gulp.watch(PATH.PARTIALS.concat('/*.(html|nunjucks)')).on('change', () => {
-	// 	browserSync.reload();
-	// 	browserSync.resume;
-	// 	done();
-	// });
-
-	// gulp.watch(PATH.APP.concat('/*.(html|nunjucks)')).on('change', () => {
-	// 	browserSync.reload();
-	// 	browserSync.resume;
-	// 	done();
-	// });
-	// done();
+	gulp.watch(PATH.APP.concat('/*.njk'), gulp.series('njk-templates'));
 });
 
 gulp.task(
@@ -174,7 +154,7 @@ gulp.task(
 		'sass-bundle',
 		'js-vendor',
 		'js-bundle',
-		'nj-templates',
+		'njk-templates',
 		'serve'
 	)
 );

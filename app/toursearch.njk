@@ -1,7 +1,7 @@
 {% set title = 'Выбор тура' %}
 {% set bodyTitle = title %}
 {% set bodyLead = '' %}
-{% extends 'layout.nunjucks' %}
+{% extends 'layout.njk' %}
 
 {% set bs_size = 'sm' %}
 {% set module = 'toursearch' %}
@@ -11,7 +11,9 @@
         {# <h3>Укажите название города или курорта</h3> #}
         <div class="card mb-2 bg-light">
             <div class="card-body">
-                <h5 class="card-title">Направление</h5>
+                <h5 class="card-title">
+                    Направление
+                    </h5>
                 <hr class="mb-2 mt-0"/>
                 {# Направление поездки #}
                 <div class="form-group form-group-sm row mb-2">
